@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import  '../styles/lexicon.styles.css'
 
 function Lexicon() {
     useEffect(() => {
@@ -7,8 +8,8 @@ function Lexicon() {
             .then(users => setMonsters(users))
     });
 
-    const [monsters, setMonsters] = useState();
-    return <div>
+    const [monsters, setMonsters] = useState([]);
+    return <div className='lexicon'>
         {
             monsters.map(monster => <h1>{monster.name}</h1>)
         }

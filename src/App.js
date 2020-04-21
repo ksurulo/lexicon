@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Lexicon from './Lexicon';
+import Lexicon from './components/Lexicon';
 
 function App() {
   return (
