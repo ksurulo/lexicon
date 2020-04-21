@@ -1,8 +1,13 @@
-import React from "react";
-import { useState } from 'react';
+import React, {useEffect, useState} from "react";
 
 function Lexicon() {
-    const [monsters, setMonsters] = useState( [
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+            .then(users => setMonsters(users))
+    });
+
+    const [monsters, setMonsters] = useState([
         {
             name: 'Frankenstein',
             id: 1
@@ -22,4 +27,5 @@ function Lexicon() {
         }
     </div>
 }
+
 export default Lexicon
