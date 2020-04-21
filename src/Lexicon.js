@@ -7,20 +7,7 @@ function Lexicon() {
             .then(users => setMonsters(users))
     });
 
-    const [monsters, setMonsters] = useState([
-        {
-            name: 'Frankenstein',
-            id: 1
-        },
-        {
-            name: 'Dracula',
-            id: 2
-        },
-        {
-            name: 'Wolverine',
-            id: 3
-        }
-    ]);
+    const [monsters, setMonsters] = useState();
     return <div>
         {
             monsters.map(monster => <h1>{monster.name}</h1>)
