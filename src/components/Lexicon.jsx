@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import  '../styles/lexicon.styles.css'
+import '../styles/lexicon.styles.css'
+import LexiconEntry from './LexiconEntry'
 
 function Lexicon() {
     useEffect(() => {
@@ -11,7 +12,7 @@ function Lexicon() {
     const [monsters, setMonsters] = useState([]);
     return <div className='lexicon'>
         {
-            monsters.map(monster => <h1>{monster.name}</h1>)
+            monsters.map(monster => <LexiconEntry monster={monster}/>)
         }
     </div>
 }
