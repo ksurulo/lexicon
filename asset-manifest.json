@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/lexicon2/static/css/main.74ef625e.chunk.css",
+    "main.js": "/lexicon2/static/js/main.814079fa.chunk.js",
+    "main.js.map": "/lexicon2/static/js/main.814079fa.chunk.js.map",
+    "runtime-main.js": "/lexicon2/static/js/runtime-main.4fd3bae3.js",
+    "runtime-main.js.map": "/lexicon2/static/js/runtime-main.4fd3bae3.js.map",
+    "static/js/2.ad777b13.chunk.js": "/lexicon2/static/js/2.ad777b13.chunk.js",
+    "static/js/2.ad777b13.chunk.js.map": "/lexicon2/static/js/2.ad777b13.chunk.js.map",
+    "index.html": "/lexicon2/index.html",
+    "precache-manifest.632caa443dbaba268bb5bc59610ec448.js": "/lexicon2/precache-manifest.632caa443dbaba268bb5bc59610ec448.js",
+    "service-worker.js": "/lexicon2/service-worker.js",
+    "static/css/main.74ef625e.chunk.css.map": "/lexicon2/static/css/main.74ef625e.chunk.css.map",
+    "static/js/2.ad777b13.chunk.js.LICENSE.txt": "/lexicon2/static/js/2.ad777b13.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4fd3bae3.js",
+    "static/js/2.ad777b13.chunk.js",
+    "static/css/main.74ef625e.chunk.css",
+    "static/js/main.814079fa.chunk.js"
+  ]
+}
