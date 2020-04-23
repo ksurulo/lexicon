@@ -2,19 +2,24 @@ import React, {useEffect, useState} from "react";
 import '../styles/lexicon.styles.css'
 import LexiconEntry from './LexiconEntry'
 
-function Lexicon() {
+export function Lexicon({filter}) {
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
-            .then(users => setMonsters(users))
+            .then(monsters => setMonsters(monsters))
     });
 
+
     const [monsters, setMonsters] = useState([]);
+    const filteredMonsters = filterMonsters(monsters, filter);
     return <div className='lexicon'>
         {
-            monsters.map(monster => <LexiconEntry monster={monster}/>)
+            filteredMonsters.map(monster => <LexiconEntry monster={monster}/>)
         }
     </div>
 }
 
-export default Lexicon
+function filterMonsters(monsters, filter) {
+    return monsters.filter(monster => monster.name.toLowerCase().includes(filter))
+
+}

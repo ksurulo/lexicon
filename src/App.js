@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {setState, useState} from 'react';
 import './App.css';
-import Lexicon from './components/Lexicon';
+import {Lexicon} from './components/Lexicon';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <Lexicon/>
-      </header>
-    </div>
-  );
+
+    const [filter, setFilter] = useState('');
+    return (
+        <div className="App">
+            <header className="App-header">
+                <input type={'search'} placeholder={'search monsters'} onChange={e => setFilter(e.target.value)}/>
+                <Lexicon filter={filter}/>
+            </header>
+        </div>
+    );
 }
 
 export default App;
