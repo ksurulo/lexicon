@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from "react";
-import '../styles/lexiconEntry.styles.css'
+import React from "react";
+import '../styles/lexiconEntry.css'
 
-function LexiconEntry(props) {
+function LexiconEntry({monster}) {
     return <div className='lexiconEntry'>
-        <img alt={"monster"} src={`https://robohash.org/${props.monster.id}?set=set2`}/>
-        <h2>{props.monster.name}</h2>
-        <p>{props.monster.email}</p>
+        <img alt={"monster"} src={`https://robohash.org/${monster.id}?set=set2`}/>
+        <h2>{monster.name}</h2>
+        <p>{monster.email}</p>
     </div>
 }
 

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import '../styles/lexicon.styles.css'
+import '../styles/lexicon.css'
 import LexiconEntry from './LexiconEntry'
 
 export function Lexicon({filter}) {
@@ -14,7 +14,7 @@ export function Lexicon({filter}) {
     const filteredMonsters = filterMonsters(monsters, filter);
     return <div className='lexicon'>
         {
-            filteredMonsters.map(monster => <LexiconEntry monster={monster}/>)
+            filteredMonsters.map(monster => <LexiconEntry monster={monster} key={monster.id}/>)
         }
     </div>
 }
